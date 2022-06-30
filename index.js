@@ -1,47 +1,5 @@
-import { estados } from '/estados.js';
-import { municipios } from '/municipios.js';
-
-// INSERT INTO asistente VALUES(
-//     'VECJ880326JBG', 'Jasso', 'Beltran', 'Gonzales', 'jasso@gmail.com', '1234', 7774332211, TO_DATE('2022-02-01','YYYY-MM-DD')
-// );
-
-// INSERT INTO cliente VALUES(
-//     'VECJ880326JMV', 'Josafat', 'Muñoz', 'Valverde', 'josa@gmail.com', '1234', 7774332211, 'Morelos', 'Miacatlan',
-//     62600, 'ASFAS', 'call', 2 ,'VECJ880326JBG'
-// );
-
-// INSERT INTO carro VALUES(
-//     'AD22FDS', 'adsfas', 'Audi', 2010, 'Verde', 'Convertible', 'A000000', 'B00000', 'VECJ880326JMV'
-// );
-
-// INSERT INTO mecanico VALUES(
-//     'VECJ880326CBG', 'Chony', 'Beltran', 'Gonzales',  'chony@gmail.com', '1234', 7772131222, TO_DATE('2022-02-01','YYYY-MM-DD')
-// );
-
-// INSERT INTO producto VALUES(
-//     01, 'Aceite', 50, 'Aceite para motor', 5
-// )
-
-// INSERT INTO caja VALUES(
-//     'VECJ880326JBG', 'Tortu', 'Beltran', 'Gonzales', 'jasso@gmail.com', '1234', 7774332211, TO_DATE('2022-02-01','YYYY-MM-DD')
-// );
-
-// INSERT INTO servicio VALUES(
-//     01, 'Lavado de llantas', 500, 'Lava las llantas del carro','VECJ880326FBG'
-// );
-
-// INSERT INTO historial VALUES(
-//     01, TO_DATE('2022-02-01','YYYY-MM-DD'), TO_DATE('2022-02-15','YYYY-MM-DD'), 'Finalizado', 01, 'AD22FDS',
-//     'VECJ880326CBG'
-// )
-
-// INSERT INTO detalle VALUES(
-//     01, 2, 100, 01, 01
-// );
-
-// INSERT INTO factura VALUES(
-//     01, TO_DATE('2022-02-15','YYYY-MM-DD'), 600, 01, 'VECJ880326JBG'
-// );
+import { estados } from '/generator-sql/estados.js';
+import { municipios } from '/generator-sql/municipios.js';
 
 const getEstado = (id) => {
 	const estado = estados.find((estado) => estado.id === id);
